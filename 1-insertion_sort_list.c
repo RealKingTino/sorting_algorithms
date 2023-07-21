@@ -16,17 +16,21 @@ void insertion_sort_list(listint_t **list)
 		sorted = current->prev;
 		while (sorted && sorted->n > current->n)
 		{
-			if (sorted->prev) sorted->prev->next = current;
-			if (current->next) current->next->prev = sorted;
+			if (sorted->prev)
+				sorted->prev->next = current;
+			if (current->next)
+				current->next->prev = sorted;
 			current->prev = sorted->prev;
 			sorted->next = current->next;
 			current->next = sorted;
 			sorted->prev = current;
 			sorted = current->prev;
-			while ((*list)->prev) *list = (*list)->prev;
+			while ((*list)->prev)
+				*list = (*list)->prev;
 			print_list(*list);
 		}
 		current = current->next;
 	}
-	while ((*list)->prev) *list = (*list)->prev;
+	while ((*list)->prev)
+		*list = (*list)->prev;
 }
