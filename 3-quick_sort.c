@@ -60,6 +60,7 @@ void swap(int *a, int *b)
 
 /**
  * quick_sort_helper - helps with assigning high and low
+ * @array: an array of integers
  * @low: beginning of array
  * @high: end of the array
  * @size: size of the array
