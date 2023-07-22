@@ -36,6 +36,6 @@ void quick_sort_helper(int *array, int low, int high, size_t size);
 void cocktail_sort_list(listint_t **list);
 int traverse_back(listint_t *node, listint_t **list);
 void counting_sort(int *array, size_t size);
-void swap(int *a, int *b);
+
 
 #endif /* SORT_H */
