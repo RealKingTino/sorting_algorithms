@@ -35,5 +35,8 @@ int traverse_back(listint_t *node, listint_t **list);
 void counting_sort(int *array, size_t size);
 void swap(int *a, int *b);
 void counting_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
+void sift_down(int *array, int start, int end, size_t size);
+int leftChild(int i);
 
 #endif /* SORT_H */
