@@ -40,5 +40,8 @@ void counting_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void sift_down(int *array, int start, int end, size_t size);
 int leftChild(int i);
+void merge_sort(int *array, size_t size);
+void merge(int *array, int *lt, int *rt, size_t left_size, size_t right_size);
+void merge_sort_helper(int *array, size_t size);
 
 #endif /* SORT_H */
