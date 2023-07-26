@@ -43,5 +43,7 @@ int leftChild(int i);
 void merge_sort(int *array, size_t size);
 void merge(int *array, int *lt, int *rt, size_t left_size, size_t right_size);
 void merge_sort_helper(int *array, size_t size);
+void radix_sort(int *array, size_t size);
+void count_sort(int *array, size_t size, int exp);
 
 #endif /* SORT_H */
