@@ -38,5 +38,7 @@ void counting_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void sift_down(int *array, int start, int end, size_t size);
 int leftChild(int i);
+void radix_sort(int *array, size_t size);
+void count_sort(int *array, size_t size, int exp);
 
 #endif /* SORT_H */
